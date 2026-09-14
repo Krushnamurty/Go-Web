@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: #eef1f5;
+
+    font-family: Arial, sans-serif;
+}
+
+
+.calculator {
+
+    width: 500px;
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+
+}
+
+
+.top {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+
+}
+
+
+.top h1 {
+
+    font-size: 24px;
+
+    margin: 0;
+
+}
+
+
+#modeButton {
+
+    padding: 8px 15px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    background: #333;
+
+    color: white;
+
+}
+
+
+.display {
+
+    background: #151515;
+
+    border-radius: 12px;
+
+    padding: 15px;
+
+    margin-bottom: 20px;
+
+}
+
+
+#history {
+
+    height: 25px;
+
+    color: #aaa;
+
+    text-align: right;
+
+}
+
+
+#display {
+
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: white;
+
+    text-align: right;
+
+    font-size: 32px;
+
+}
+
+
+.buttons {
+
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 10px;
+
+}
+
+
+button {
+
+    height: 55px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #e9edf2;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    transition: 0.15s;
+
+}
+
+
+button:hover {
+
+    transform: scale(1.03);
+
+}
+
+
+.function {
+
+    background: #dce5f3;
+
+}
+
+
+.operator {
+
+    background: #ffdca8;
+
+}
+
+
+.equals {
+
+    background: #8ac6ff;
+
+    grid-row: span 2;
+
+}
+
+
+.clear {
+
+    background: #ffb4b4;
+
+}
+
+
+.history-panel {
+
+    margin-top: 20px;
+
+    border-top: 1px solid #ddd;
+
+    padding-top: 10px;
+
+}
+
+
+.history-panel h3 {
+
+    margin-bottom: 8px;
+
+}
+
+
+#historyList {
+
+    max-height: 150px;
+
+    overflow-y: auto;
+
+}
+
+
+.history-item {
+
+    padding: 6px;
+
+    border-bottom: 1px solid #eee;
+
+    cursor: pointer;
+
+}
+
+
+@media (max-width: 600px) {
+
+    .calculator {
+
+        width: 95%;
+
+        padding: 15px;
+
+    }
+
+    button {
+
+        height: 48px;
+
+    }
+
+}
